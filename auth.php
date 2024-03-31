@@ -12,7 +12,7 @@ function pdo_connect_mysql() {
     }
 }
 $pdo = pdo_connect_mysql();
-
+session_start();
 
 // Check if the user is already logged in
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true){
